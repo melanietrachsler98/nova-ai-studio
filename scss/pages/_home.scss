@@ -1,0 +1,223 @@
+@use '../abstract/variables' as *;
+
+// Título/subtítulo reutilizable
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $text-color;
+  margin-bottom: $spacing-sm;
+}
+
+.section-subtitle {
+  color: $text-secondary;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+// Servicios preview
+.services-preview {
+  padding: $spacing-3xl 0;
+  background-color: $white;
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-2xl;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: $spacing-2xl;
+  }
+}
+
+.service-card {
+  background-color: $surface;
+  border: 1px solid $outline-variant;
+  border-radius: $radius-lg;
+  padding: $spacing-xl;
+  height: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: rgba($primary, 0.5);
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: $radius-md;
+    background-color: rgba($primary, 0.1);
+    color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: $spacing-sm;
+    color: $text-color;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    color: $text-secondary;
+    margin-bottom: 0;
+  }
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  color: $primary;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+
+  &:hover {
+    gap: $spacing-md;
+  }
+}
+
+// Por qué elegirnos
+.why-us {
+  padding: $spacing-3xl 0;
+  background-color: $background;
+
+  &__eyebrow {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: $spacing-xl;
+    color: $text-color;
+  }
+
+  &__image {
+    border-radius: $radius-lg;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.benefit-card {
+  background-color: $white;
+  border: 1px solid rgba($outline-variant, 0.3);
+  border-radius: $radius-md;
+  padding: $spacing-lg;
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  height: 100%;
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: $radius-sm;
+    background-color: $secondary-container;
+    color: $on-secondary-container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: $spacing-xs;
+    color: $text-color;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    color: $text-secondary;
+    margin-bottom: 0;
+  }
+}
+
+// Cómo trabajamos
+.how-we-work {
+  padding: $spacing-3xl 0;
+  background-color: $white;
+  border-top: 1px solid rgba($outline-variant, 0.2);
+  border-bottom: 1px solid rgba($outline-variant, 0.2);
+}
+
+.step-card {
+  text-align: center;
+
+  &__number {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $background;
+    border: 4px solid $white;
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto $spacing-lg;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: $spacing-sm;
+    color: $text-color;
+  }
+
+  &__text {
+    color: $text-secondary;
+    font-size: 0.95rem;
+  }
+}
+
+// CTA final
+.cta-final {
+  padding: $spacing-3xl 0;
+  background-color: $white;
+
+  &__box {
+    background-color: $primary-light;
+    border-radius: $radius-lg;
+    padding: $spacing-3xl $spacing-xl;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: $spacing-md;
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 560px;
+    margin: 0 auto $spacing-2xl;
+  }
+}

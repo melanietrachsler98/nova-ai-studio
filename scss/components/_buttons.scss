@@ -1,0 +1,78 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.nova-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: $spacing-md $spacing-xl;
+
+    border-radius: $radius-md;
+
+    font-family: $title-font;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    &--nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: $primary;
+
+        color: $white;
+
+        border: 1px solid $primary;
+
+        &:hover {
+            transform: translateY(-2px);
+            opacity: .9;
+        }
+    }
+
+    // Botón principal
+    &--primary {
+        background-color: $primary;
+        color: $white;
+        border: 1px solid $primary;
+
+        &:hover {
+            transform: translateY(-2px);
+            opacity: .9;
+        }
+    }
+
+    // Botón secundario
+    &--secondary {
+        background-color: transparent;
+        color: $white;
+        border: 1px solid rgba(255,255,255,.2);
+
+        &:hover {
+            background-color: rgba(255,255,255,.1);
+        }
+    }
+       // Botón claro (sobre fondos de color, ej: CTA final)
+    &--light {
+        background-color: $white;
+        color: $primary;
+        border: 1px solid $white;
+        border-radius: $radius-pill;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+}
+}

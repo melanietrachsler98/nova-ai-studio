@@ -1,0 +1,17 @@
+@use "../abstract/variables" as *;
+
+@mixin container {
+
+    width: 90%;
+    max-width: $container-width;
+    margin: 0 auto;
+
+}
+
+@mixin flex-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

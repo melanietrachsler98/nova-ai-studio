@@ -1,0 +1,144 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.hero {
+
+    min-height: 100vh;
+
+    padding-top: 120px;
+
+    background: radial-gradient(
+        circle at top right,
+        $primary-dark 0%,
+        #08112B 100%
+    );
+
+    color: $white;
+
+    overflow: hidden;
+
+
+
+    &__container {
+
+        @include container;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        align-items: center;
+
+        gap: $spacing-2xl;
+
+    }
+
+
+
+    &__content {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: $spacing-lg;
+
+    }
+
+
+
+    &__tag {
+
+        display: inline-flex;
+
+        align-self: flex-start;
+
+        padding: $spacing-xs $spacing-md;
+
+        border-radius: $radius-pill;
+
+        background-color: rgba(42, 73, 223, 0.2);
+
+        border: 1px solid rgba(73, 101, 249, 0.3);
+
+        color: $primary-light;
+
+        font-size: 12px;
+
+        font-weight: 600;
+
+        letter-spacing: 1px;
+
+    }
+
+
+
+    &__title {
+
+        font-family: $title-font;
+
+        font-size: 64px;
+
+        line-height: 1.1;
+
+        font-weight: 700;
+
+        letter-spacing: -1px;
+
+
+
+        span {
+
+            color: $primary-light;
+
+        }
+
+    }
+
+
+
+    &__description {
+
+        max-width: 520px;
+
+        color: rgba(255,255,255,.7);
+
+        font-size: 18px;
+
+        line-height: 1.6;
+
+    }
+
+
+
+    &__buttons {
+
+        display: flex;
+
+        gap: $spacing-md;
+
+        margin-top: $spacing-sm;
+
+    }
+
+
+
+    &__image {
+
+        display: flex;
+
+        justify-content: center;
+
+
+
+        img {
+
+            width: 100%;
+
+            max-width: 600px;
+
+        }
+
+    }
+
+}

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nova AI Studio | Automatización IA para Negocios Modernos</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+
+const menuButton = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+
+menuButton.addEventListener("click", () => {
+
+  mobileMenu.classList.toggle("active");
+
+});
+
+
+</script>
+  </head>
+
+  <body>
+    <header class="header" id="top-nav">
+      <div class="container header_conteiner">
+        <a href="index.html" class="logo">
+          <img src="assets/img/logonova_1.png" alt="Nova AI Studio" />
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="pages/services.html" class="nav__link">Servicios</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="pages/solutions.html" class="nav__link">Soluciones</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="pages/about.html" class="nav__link">Nosotros</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="pages/contact.html" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="mobile-menu">
+
+  <a href="../index.html">
+    Inicio
+  </a>
+
+  <a href="services.html">
+    Servicios
+  </a>
+
+  <a href="solutions.html">
+    Soluciones
+  </a>
+
+  <a href="about.html">
+    Nosotros
+  </a>
+
+  <a href="contact.html">
+    Contacto
+  </a>
+
+</div>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Contenido -->
+
+            <div class="col-12 col-lg-6 hero__content">
+              <span class="hero__tag">
+                AUTOMATIZACIÓN IA PARA NEGOCIOS MODERNOS
+              </span>
+
+              <h1 class="hero__title">
+                Transforma tu flujo de trabajo con
+                <span> Inteligencia Artificial </span>
+              </h1>
+
+              <p class="hero__description">
+                Optimizamos tus procesos empresariales con soluciones de IA
+                personalizadas para escalar tu negocio hacia el siguiente nivel
+                de eficiencia.
+              </p>
+
+              <div class="hero__buttons">
+                <a href="#contacto" class="nova-btn nova-btn--primary">
+                  Empezar ahora
+                </a>
+
+                <a href="#soluciones" class="nova-btn nova-btn--secondary">
+                  Ver soluciones
+                </a>
+              </div>
+            </div>
+
+            <!-- Imagen / Mockup -->
+
+            <div class="col-12 col-lg-6 hero__image">
+              <img
+                src="assets/img/hero-dashboard.png"
+                alt="Dashboard de inteligencia artificial"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Servicios preview -->
+      <section class="services-preview" id="servicios">
+        <div class="container">
+          <div class="services-preview__header">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">
+              Soluciones integrales diseñadas para integrarse perfectamente con
+              tus sistemas actuales.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="service-card">
+                <div class="service-card__icon">
+                  <span class="material-symbols-outlined"
+                    >settings_suggest</span
+                  >
+                </div>
+                <h3 class="service-card__title">Automatización de Procesos</h3>
+                <p class="service-card__text">
+                  Elimina tareas repetitivas y libera el potencial de tu equipo
+                  humano.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="service-card">
+                <div class="service-card__icon">
+                  <span class="material-symbols-outlined">analytics</span>
+                </div>
+                <h3 class="service-card__title">Análisis de Datos con IA</h3>
+                <p class="service-card__text">
+                  Convierte datos complejos en decisiones estratégicas
+                  accionables en tiempo real.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="service-card">
+                <div class="service-card__icon">
+                  <span class="material-symbols-outlined">forum</span>
+                </div>
+                <h3 class="service-card__title">Chatbots Inteligentes</h3>
+                <p class="service-card__text">
+                  Atención al cliente 24/7 con IA generativa que habla el
+                  lenguaje de tu marca.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="service-card">
+                <div class="service-card__icon">
+                  <span class="material-symbols-outlined">architecture</span>
+                </div>
+                <h3 class="service-card__title">Consultoría Estratégica</h3>
+                <p class="service-card__text">
+                  Te acompañamos en el diseño de tu roadmap de transformación
+                  digital.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-preview__cta">
+            <a href="pages/services.html" class="link-arrow">
+              Ver todos los servicios
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Por qué elegirnos -->
+      <section class="why-us" id="nosotros">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-12 col-lg-6">
+              <span class="why-us__eyebrow">Diferenciación</span>
+              <h2 class="why-us__title">
+                Liderando la vanguardia tecnológica en IA
+              </h2>
+              <div class="why-us__image">
+                <img
+                  src="assets/img/why-us-office.jpg"
+                  alt="Equipo trabajando en oficina moderna"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="row g-4">
+                <div class="col-12 col-sm-6">
+                  <div class="benefit-card">
+                    <div class="benefit-card__icon">
+                      <span class="material-symbols-outlined">trending_up</span>
+                    </div>
+                    <h4 class="benefit-card__title">Escalabilidad</h4>
+                    <p class="benefit-card__text">
+                      Crecimiento sin fricciones adaptado a tu volumen.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="benefit-card">
+                    <div class="benefit-card__icon">
+                      <span class="material-symbols-outlined">speed</span>
+                    </div>
+                    <h4 class="benefit-card__title">Eficiencia</h4>
+                    <p class="benefit-card__text">
+                      Reducción drástica de tiempos operativos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="benefit-card">
+                    <div class="benefit-card__icon">
+                      <span class="material-symbols-outlined"
+                        >support_agent</span
+                      >
+                    </div>
+                    <h4 class="benefit-card__title">Soporte 24/7</h4>
+                    <p class="benefit-card__text">
+                      Acompañamiento continuo de expertos en IA.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <div class="benefit-card">
+                    <div class="benefit-card__icon">
+                      <span class="material-symbols-outlined"
+                        >integration_instructions</span
+                      >
+                    </div>
+                    <h4 class="benefit-card__title">Integración Simple</h4>
+                    <p class="benefit-card__text">
+                      Conectamos con tus herramientas favoritas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cómo trabajamos -->
+      <section class="how-we-work">
+        <div class="container">
+          <h2 class="section-title text-center">Cómo trabajamos</h2>
+
+          <div class="row g-4 how-we-work__steps">
+            <div class="col-12 col-md-4">
+              <div class="step-card">
+                <div class="step-card__number">1</div>
+                <h3 class="step-card__title">Descubrimiento</h3>
+                <p class="step-card__text">
+                  Analizamos tus desafíos y auditamos tus procesos actuales para
+                  identificar oportunidades de mejora con IA.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="step-card">
+                <div class="step-card__number">2</div>
+                <h3 class="step-card__title">Automatización</h3>
+                <p class="step-card__text">
+                  Desarrollamos e implementamos modelos personalizados de IA
+                  integrados perfectamente en tu ecosistema digital.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="step-card">
+                <div class="step-card__number">3</div>
+                <h3 class="step-card__title">Optimización</h3>
+                <p class="step-card__text">
+                  Monitoreo continuo y refinamiento de algoritmos para asegurar
+                  el máximo retorno de inversión y rendimiento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA final -->
+      <section class="cta-final" id="contacto">
+        <div class="container">
+          <div class="cta-final__box">
+            <h2 class="cta-final__title">
+              ¿Listo para el futuro de tu empresa?
+            </h2>
+            <p class="cta-final__text">
+              Únete a las empresas que ya están ahorrando tiempo y aumentando su
+              rentabilidad con las soluciones inteligentes de Nova.
+            </p>
+            <a href="pages/contact.html" class="nova-btn nova-btn--light">
+              Agendar Consulta
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <img
+            src="assets/img/logonova.png"
+            alt="Nova AI Studio"
+            class="footer__logo"
+          />
+          <p class="footer__tagline">
+            Revolucionando el mañana con inteligencia artificial hoy.
+          </p>
+        </div>
+
+        <div class="footer__nav">
+          <span class="footer__heading">Navegación</span>
+          <a href="#">Privacidad</a>
+          <a href="pages/services.html">Servicios</a>
+          <a href="pages/contact.html">Contacto</a>
+        </div>
+
+        <div class="footer__contact">
+          <span class="footer__heading">Contacto</span>
+          <span>hola@nova-studio.ai</span>
+          <span>+34 900 123 456</span>
+          <span>Madrid, España</span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        © 2024 Nova AI Studio. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const header = document.querySelector(".header");
+      const navLinks = document.querySelectorAll(".nav__link");
+
+      if (menuToggle && header) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = header.classList.toggle("menu-open");
+          menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            if (header.classList.contains("menu-open")) {
+              header.classList.remove("menu-open");
+              menuToggle.setAttribute("aria-expanded", "false");
+            }
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
