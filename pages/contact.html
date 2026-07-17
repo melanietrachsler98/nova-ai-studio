@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Nosotros | Nova AI Studio</title>
+    <title>Contacto | Nova AI Studio</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -44,215 +44,191 @@
             </li>
 
             <li class="nav__item">
-              <a href="about.html" class="nav__link nav__link--active">
-                Nosotros
-              </a>
+              <a href="about.html" class="nav__link"> Nosotros </a>
             </li>
 
             <li class="nav__item">
-              <a href="contact.html" class="nav__link"> Contacto </a>
+              <a href="contact.html" class="nav__link nav__link--active">
+                Contacto
+              </a>
             </li>
           </ul>
         </nav>
+
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
-    <!-- CONTENIDO -->
+    <!-- HERO CONTACTO -->
 
-    <main>
-      <!-- HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <span class="contact-hero__tag"> CANALES DE COMUNICACIÓN </span>
 
-      <section class="about-hero">
-        <div class="container">
-          <span class="section-tag"> El corazón de Nova </span>
+        <h1>Estamos aquí para ayudarte</h1>
 
-          <h1>Nuestra Historia y Visión</h1>
+        <p>
+          ¿Tienes un desafío tecnológico o una idea innovadora? Nuestro equipo
+          está preparado para transformar tu visión en una solución inteligente
+          y escalable.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- FORMULARIO -->
+
+          <div class="contact-form">
+            <h2>Escríbenos</h2>
+
+            <form>
+              <div class="form-group">
+                <label> Nombre completo </label>
+
+                <input type="text" placeholder="Ej: Juan Pérez" />
+              </div>
+
+              <div class="form-group">
+                <label> Correo electrónico </label>
+
+                <input type="email" placeholder="nombre@empresa.com" />
+              </div>
+
+              <div class="form-group">
+                <label> Empresa </label>
+
+                <input type="text" placeholder="Nombre de tu organización" />
+              </div>
+
+              <div class="form-group">
+                <label> Mensaje </label>
+
+                <textarea
+                  rows="5"
+                  placeholder="Cuéntanos sobre tu proyecto..."
+                ></textarea>
+              </div>
+
+              <button class="nova-btn nova-btn--primary">
+                Enviar solicitud
+              </button>
+            </form>
+          </div>
+
+          <!-- INFORMACIÓN -->
+
+          <div class="contact-info">
+            <h2>Información de contacto</h2>
+
+            <div class="contact-item">
+              <strong> Email </strong>
+
+              <span> hola@nova-studio.ai </span>
+            </div>
+
+            <div class="contact-item">
+              <strong> Teléfono </strong>
+
+              <span> +34 900 123 456 </span>
+            </div>
+
+            <div class="contact-item">
+              <strong> Dirección </strong>
+
+              <span> Madrid, España </span>
+            </div>
+
+            <div class="contact-social">
+              <h3>Redes Sociales</h3>
+
+              <a href="#"> LinkedIn </a>
+
+              <a href="#"> Instagram </a>
+
+              <a href="#"> Twitter </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="contact-faq">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="faq-item">
+          <h3>¿Cómo comienzan un proyecto de IA?</h3>
 
           <p>
-            Nacimos de la convicción de que la inteligencia artificial no es
-            solo una herramienta, sino un catalizador para la creatividad
-            humana.
+            Analizamos las necesidades del negocio, definimos objetivos y
+            diseñamos una solución personalizada.
           </p>
         </div>
-      </section>
 
-      <!-- HISTORIA -->
+        <div class="faq-item">
+          <h3>¿Cuánto demora una implementación?</h3>
 
-      <section class="about-history">
-        <div class="container about-history__grid">
-          <div class="about-history__content">
-            <h2>Cómo todo comenzó</h2>
-
-            <p>
-              Nova AI Studio surgió cuando un grupo de expertos identificó una
-              brecha crítica: las empresas tenían datos, pero necesitaban
-              transformar esa información en experiencias inteligentes.
-            </p>
-
-            <p>
-              Desde entonces trabajamos creando soluciones de inteligencia
-              artificial con un enfoque humano, estratégico y eficiente.
-            </p>
-
-            <div class="about-history__number">
-              <strong> 150+ </strong>
-
-              <span> Proyectos de IA implementados con éxito. </span>
-            </div>
-          </div>
-
-          <div class="about-history__image">
-            <img
-              src="../assets/img/about-team.jpg"
-              alt="Equipo Nova AI Studio"
-            />
-          </div>
+          <p>
+            Depende de la complejidad del proyecto, pero trabajamos con
+            metodologías ágiles para entregar resultados rápidos.
+          </p>
         </div>
-      </section>
 
-      <!-- MISION Y VALORES -->
+        <div class="faq-item">
+          <h3>¿Ofrecen soporte luego del lanzamiento?</h3>
 
-      <section class="about-values">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Misión y Valores</h2>
-
-            <p>
-              Construimos tecnología responsable enfocada en resultados reales.
-            </p>
-          </div>
-
-          <div class="values-grid">
-            <div class="value-card">
-              <div class="value-card__icon">✦</div>
-
-              <h3>Innovación</h3>
-
-              <p>
-                Exploramos nuevas tecnologías de IA para crear soluciones de
-                vanguardia.
-              </p>
-            </div>
-
-            <div class="value-card">
-              <div class="value-card__icon">✓</div>
-
-              <h3>Ética en IA</h3>
-
-              <p>Desarrollamos sistemas transparentes y seguros.</p>
-            </div>
-
-            <div class="value-card">
-              <div class="value-card__icon">↗</div>
-
-              <h3>Resultados Tangibles</h3>
-
-              <p>Priorizamos impacto real y crecimiento empresarial.</p>
-            </div>
-          </div>
+          <p>
+            Sí, contamos con mantenimiento y optimización continua de las
+            soluciones implementadas.
+          </p>
         </div>
-      </section>
-
-      <!-- EQUIPO -->
-
-      <section class="team">
-        <div class="container">
-          <div class="section-heading">
-            <h2>El Equipo</h2>
-
-            <p>Las personas detrás de cada solución.</p>
-          </div>
-
-          <div class="team-grid">
-            <div class="team-card">
-              <img src="../assets/img/team1.jpg" alt="Elena Vance" />
-
-              <h3>Elena Vance</h3>
-
-              <p>CEO & Co-Fundadora</p>
-            </div>
-
-            <div class="team-card">
-              <img src="../assets/img/team2.jpg" alt="Marcus Chen" />
-
-              <h3>Marcus Chen</h3>
-
-              <p>Lead AI Engineer</p>
-            </div>
-
-            <div class="team-card">
-              <img src="../assets/img/team3.jpg" alt="Sofia Rossi" />
-
-              <h3>Sofia Rossi</h3>
-
-              <p>Head of Design</p>
-            </div>
-
-            <div class="team-card">
-              <img src="../assets/img/team4.jpg" alt="Julián Ortega" />
-
-              <h3>Julián Ortega</h3>
-
-              <p>Operations Director</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-
-      <section class="about-cta">
-        <div class="container">
-          <div class="cta-box">
-            <h2>¿Quieres unirte al cambio?</h2>
-
-            <p>
-              Llevemos tu empresa al siguiente nivel con inteligencia
-              artificial.
-            </p>
-
-            <div class="cta-buttons">
-              <a href="contact.html" class="nova-btn nova-btn--primary">
-                Contáctanos
-              </a>
-
-              <a href="#" class="nova-btn nova-btn--secondary">
-                Ver posiciones
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
     <!-- FOOTER -->
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__brand">
           <img
-            src="assets/img/logonova.png"
+            src="../assets/img/logonova.png"
             alt="Nova AI Studio"
             class="footer__logo"
           />
+
           <p class="footer__tagline">
             Revolucionando el mañana con inteligencia artificial hoy.
           </p>
         </div>
 
         <div class="footer__nav">
-          <span class="footer__heading">Navegación</span>
-          <a href="#">Privacidad</a>
-          <a href="pages/services.html">Servicios</a>
-          <a href="pages/contact.html">Contacto</a>
+          <span class="footer__heading"> Navegación </span>
+
+          <a href="services.html"> Servicios </a>
+
+          <a href="about.html"> Nosotros </a>
+
+          <a href="contact.html"> Contacto </a>
         </div>
 
         <div class="footer__contact">
-          <span class="footer__heading">Contacto</span>
-          <span>hola@nova-studio.ai</span>
-          <span>+34 900 123 456</span>
-          <span>Madrid, España</span>
+          <span class="footer__heading"> Contacto </span>
+
+          <span> hola@nova-studio.ai </span>
+
+          <span> +34 900 123 456 </span>
+
+          <span> Madrid, España </span>
         </div>
       </div>
 
@@ -262,6 +238,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
       const menuToggle = document.querySelector(".menu-toggle");
       const header = document.querySelector(".header");
@@ -270,15 +247,13 @@
       if (menuToggle && header) {
         menuToggle.addEventListener("click", () => {
           const isOpen = header.classList.toggle("menu-open");
+
           menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
         });
 
         navLinks.forEach((link) => {
           link.addEventListener("click", () => {
-            if (header.classList.contains("menu-open")) {
-              header.classList.remove("menu-open");
-              menuToggle.setAttribute("aria-expanded", "false");
-            }
+            header.classList.remove("menu-open");
           });
         });
       }

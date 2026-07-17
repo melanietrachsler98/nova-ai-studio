@@ -750,200 +750,193 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.about-hero {
-  min-height: 70vh;
-  padding-top: 120px;
+.contact-hero {
+  background: linear-gradient(135deg, #08112B, #2A49DF);
+  padding: 64px 0;
+  min-height: 420px;
   display: flex;
   align-items: center;
-  background: #08112B;
+  text-align: center;
   color: #FFFFFF;
 }
-.about-hero h1 {
-  font-size: 64px;
+.contact-hero .container {
   max-width: 800px;
-  margin-bottom: 32px;
 }
-.about-hero p {
-  max-width: 650px;
-  font-size: 18px;
-  opacity: 0.8;
-}
-
-.section-tag {
+.contact-hero__tag {
   display: inline-block;
   padding: 4px 16px;
+  margin-bottom: 24px;
   border-radius: 999px;
-  background: rgba(42, 73, 223, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #D4DBFF;
   font-size: 12px;
-  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
-
-.about-history {
-  padding: 64px 0;
-}
-
-.about-history__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.about-history__content h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
-}
-.about-history__content p {
-  color: #444655;
-  line-height: 1.7;
+.contact-hero h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
   margin-bottom: 16px;
 }
-
-.about-history__number {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  border-left: 4px solid #2A49DF;
-  padding-left: 24px;
-}
-.about-history__number strong {
-  font-size: 64px;
-  color: #2A49DF;
-}
-.about-history__number span {
-  color: #444655;
+.contact-hero p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
-.about-history__image img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 24px;
-}
-
-.about-values {
-  background: #FAF8FF;
+.contact-section {
   padding: 64px 0;
+  background: #FAF8FF;
 }
 
-.section-heading {
-  text-align: center;
-  margin-bottom: 64px;
-}
-.section-heading h2 {
-  font-size: 32px;
-}
-.section-heading p {
-  color: #444655;
-}
-
-.values-grid {
+.contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.5fr 1fr;
   gap: 32px;
+  align-items: start;
 }
 
-.value-card {
+.contact-form {
   background: #FFFFFF;
-  padding: 48px;
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px solid #C5C5D8;
+  box-shadow: 0 10px 30px rgba(8, 17, 43, 0.05);
+}
+.contact-form h2 {
+  font-family: "Inter", sans-serif;
+  color: #131B2E;
+  margin-bottom: 32px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-group label {
+  color: #444655;
+  font-size: 14px;
+  font-weight: 600;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #C5C5D8;
+  background: #FAF8FF;
+  font-family: "Inter", sans-serif;
+  color: #131B2E;
+  transition: 0.3s ease;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2A49DF;
+  box-shadow: 0 0 0 4px rgba(42, 73, 223, 0.12);
+}
+
+.contact-info {
+  background: #FFFFFF;
+  padding: 32px;
   border-radius: 24px;
   border: 1px solid #C5C5D8;
 }
-.value-card h3 {
-  margin-bottom: 16px;
-}
-.value-card p {
-  color: #444655;
+.contact-info h2 {
+  color: #131B2E;
+  margin-bottom: 32px;
 }
 
-.value-card__icon {
-  width: 48px;
-  height: 48px;
+.contact-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #D4DBFF;
-  color: #2A49DF;
-  border-radius: 16px;
+  flex-direction: column;
+  gap: 4px;
   margin-bottom: 24px;
 }
-
-.team {
-  padding: 64px 0;
-  background: #F2F3FF;
+.contact-item strong {
+  color: #2A49DF;
+  font-size: 14px;
 }
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-}
-
-.team-card img {
-  width: 100%;
-  aspect-ratio: 3/4;
-  object-fit: cover;
-  border-radius: 24px;
-  margin-bottom: 16px;
-}
-.team-card h3 {
-  font-size: 20px;
-}
-.team-card p {
+.contact-item span {
   color: #444655;
 }
 
-.about-cta {
-  padding: 64px 0;
+.contact-social {
+  padding-top: 24px;
+  border-top: 1px solid #C5C5D8;
 }
-
-.cta-box {
-  background: #08112B;
-  padding: 64px;
-  border-radius: 24px;
-  text-align: center;
-  color: #FFFFFF;
-}
-.cta-box h2 {
-  font-size: 32px;
+.contact-social h3 {
+  font-size: 16px;
+  color: #131B2E;
   margin-bottom: 16px;
 }
-.cta-box p {
+.contact-social a {
+  display: inline-block;
+  margin-right: 16px;
+  color: #2A49DF;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-social a:hover {
+  color: #08112B;
+}
+
+.contact-faq {
+  background: #FFFFFF;
+  padding: 64px 0;
+}
+.contact-faq h2 {
+  text-align: center;
   margin-bottom: 32px;
-  opacity: 0.8;
+  color: #131B2E;
 }
 
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
+.faq-item {
+  background: #FAF8FF;
+  border: 1px solid #C5C5D8;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.faq-item h3 {
+  font-size: 18px;
+  color: #131B2E;
+  margin-bottom: 8px;
+}
+.faq-item p {
+  color: #444655;
+  line-height: 1.6;
+  margin: 0;
 }
 
-@media (max-width: 991px) {
-  .about-hero h1 {
-    font-size: 40px;
-  }
-  .about-history__grid {
+@media (max-width: 992px) {
+  .contact-grid {
     grid-template-columns: 1fr;
   }
-  .values-grid {
-    grid-template-columns: 1fr;
-  }
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .contact-hero h1 {
+    font-size: 38px;
   }
 }
-@media (max-width: 600px) {
-  .team-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 576px) {
+  .contact-hero {
+    padding: 48px 0;
   }
-  .about-history__number strong {
-    font-size: 42px;
+  .contact-hero h1 {
+    font-size: 32px;
   }
-  .cta-buttons {
-    flex-direction: column;
+  .contact-hero p {
+    font-size: 16px;
+  }
+  .contact-form,
+  .contact-info {
+    padding: 24px;
   }
 }
 .solutions-hero {

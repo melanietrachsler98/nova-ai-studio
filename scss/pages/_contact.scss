@@ -1,113 +1,341 @@
 @use "../abstract/variables" as *;
-@use "../abstract/mixins" as *;
+
+
+.contact-hero {
+
+  background: linear-gradient(
+    135deg,
+    $primary-dark,
+    $primary
+  );
+
+  padding: $spacing-3xl 0;
+
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: $white;
+
+
+  .container {
+    max-width: 800px;
+  }
+
+
+  &__tag {
+
+    display: inline-block;
+
+    padding: $spacing-xs $spacing-md;
+
+    margin-bottom: $spacing-lg;
+
+    border-radius: $radius-pill;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    color: $secondary-container;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: .08em;
+
+  }
+
+
+  h1 {
+
+    font-family: $title-font;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    margin-bottom: $spacing-md;
+
+  }
+
+
+  p {
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+  }
+
+
+}
 
 
 
-.about-hero {
-
-    min-height: 70vh;
-
-    padding-top:120px;
-
-    display:flex;
-
-    align-items:center;
-
-    background:$primary-dark;
-
-    color:$white;
 
 
-    h1{
+.contact-section {
 
-        font-size:64px;
-        max-width:800px;
-        margin-bottom:$spacing-xl;
+  padding: $spacing-3xl 0;
+
+  background: $background;
+
+
+}
+
+
+
+.contact-grid {
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: $spacing-xl;
+
+  align-items: start;
+
+
+}
+
+
+
+
+
+.contact-form {
+
+
+  background: $surface;
+
+  padding: $spacing-xl;
+
+  border-radius: $radius-lg;
+
+  border: 1px solid $outline-variant;
+
+
+  box-shadow: 0 10px 30px rgba(8,17,43,.05);
+
+
+
+  h2 {
+
+    font-family: $title-font;
+
+    color: $text-color;
+
+    margin-bottom: $spacing-xl;
+
+  }
+
+
+
+  form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: $spacing-lg;
+
+  }
+
+
+
+}
+
+
+
+
+
+.form-group {
+
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: $spacing-xs;
+
+
+
+  label {
+
+    color: $text-secondary;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+  }
+
+
+
+  input,
+  textarea {
+
+
+    width: 100%;
+
+    padding: $spacing-md;
+
+
+    border-radius: $radius-sm;
+
+
+    border: 1px solid $outline-variant;
+
+
+    background: $background;
+
+
+    font-family: $text-font;
+
+
+    color: $text-color;
+
+
+    transition: .3s ease;
+
+
+
+    &:focus {
+
+      outline: none;
+
+      border-color: $primary;
+
+      box-shadow: 0 0 0 4px rgba(42,73,223,.12);
 
     }
 
 
-    p{
+  }
 
-        max-width:650px;
-        font-size:18px;
-        opacity:.8;
+
+}
+
+
+
+
+
+.contact-info {
+
+
+  background: $surface;
+
+
+  padding: $spacing-xl;
+
+
+  border-radius: $radius-lg;
+
+
+  border: 1px solid $outline-variant;
+
+
+
+  h2 {
+
+    color: $text-color;
+
+    margin-bottom: $spacing-xl;
+
+  }
+
+
+
+}
+
+
+
+
+
+.contact-item {
+
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: $spacing-xs;
+
+  margin-bottom: $spacing-lg;
+
+
+
+  strong {
+
+    color: $primary;
+
+    font-size: 14px;
+
+  }
+
+
+
+  span {
+
+    color: $text-secondary;
+
+  }
+
+
+}
+
+
+
+
+
+.contact-social {
+
+
+  padding-top: $spacing-lg;
+
+
+  border-top: 1px solid $outline-variant;
+
+
+
+  h3 {
+
+    font-size: 16px;
+
+    color: $text-color;
+
+    margin-bottom: $spacing-md;
+
+  }
+
+
+
+  a {
+
+    display: inline-block;
+
+    margin-right: $spacing-md;
+
+
+    color: $primary;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+
+
+    &:hover {
+
+      color: $primary-dark;
 
     }
 
-}
 
-
-
-
-
-.section-tag{
-
-display:inline-block;
-
-padding:$spacing-xs $spacing-md;
-
-border-radius:$radius-pill;
-
-background:rgba(42,73,223,.2);
-
-border:1px solid rgba(255,255,255,.2);
-
-margin-bottom:$spacing-lg;
-
-font-size:12px;
-
-text-transform:uppercase;
-
-}
-
-
-
-
-
-.about-history{
-
-padding:$spacing-3xl 0;
-
-}
-
-
-
-.about-history__grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:$spacing-3xl;
-
-align-items:center;
-
-}
-
-
-
-.about-history__content{
-
-
-h2{
-
-font-size:32px;
-
-margin-bottom:$spacing-lg;
-
-}
-
-
-p{
-
-color:$text-secondary;
-
-line-height:1.7;
-
-margin-bottom:$spacing-md;
-
-}
+  }
 
 
 }
@@ -115,34 +343,26 @@ margin-bottom:$spacing-md;
 
 
 
-.about-history__number{
 
 
-display:flex;
-
-align-items:center;
-
-gap:$spacing-md;
-
-border-left:4px solid $primary;
-
-padding-left:$spacing-lg;
+.contact-faq {
 
 
-strong{
+  background: $surface;
 
-font-size:64px;
-
-color:$primary;
-
-}
+  padding: $spacing-3xl 0;
 
 
-span{
 
-color:$text-secondary;
+  h2 {
 
-}
+    text-align: center;
+
+    margin-bottom: $spacing-xl;
+
+    color: $text-color;
+
+  }
 
 
 }
@@ -151,68 +371,46 @@ color:$text-secondary;
 
 
 
-.about-history__image img{
+.faq-item {
 
 
-width:100%;
-
-height:500px;
-
-object-fit:cover;
-
-border-radius:$radius-lg;
+  background: $background;
 
 
-}
+  border: 1px solid $outline-variant;
 
 
+  padding: $spacing-lg;
 
 
+  border-radius: $radius-md;
 
-.about-values{
 
-background:$background;
-
-padding:$spacing-3xl 0;
-
-}
+  margin-bottom: $spacing-md;
 
 
 
-.section-heading{
+  h3 {
 
-text-align:center;
+    font-size: 18px;
 
-margin-bottom:$spacing-3xl;
+    color: $text-color;
 
+    margin-bottom: $spacing-sm;
 
-h2{
-
-font-size:32px;
-
-}
-
-
-p{
-
-color:$text-secondary;
-
-}
-
-}
+  }
 
 
 
+  p {
 
+    color: $text-secondary;
 
-.values-grid{
+    line-height: 1.6;
 
+    margin: 0;
 
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:$spacing-xl;
+  }
 
 
 }
@@ -220,256 +418,67 @@ gap:$spacing-xl;
 
 
 
-.value-card{
+
+// RESPONSIVE
 
 
-background:$white;
-
-padding:$spacing-2xl;
-
-border-radius:$radius-lg;
-
-border:1px solid $outline-variant;
+@media(max-width: 992px){
 
 
-h3{
+  .contact-grid {
 
-margin-bottom:$spacing-md;
+    grid-template-columns: 1fr;
 
-}
-
-
-p{
-
-color:$text-secondary;
-
-}
+  }
 
 
-
-}
-
+  .contact-hero {
 
 
-.value-card__icon{
+    h1 {
 
+      font-size: 38px;
 
-width:48px;
+    }
 
-height:48px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-background:$secondary-container;
-
-color:$primary;
-
-border-radius:$radius-md;
-
-margin-bottom:$spacing-lg;
+  }
 
 
 }
 
 
 
+@media(max-width:576px){
 
 
-.team{
+  .contact-hero {
 
-padding:$spacing-3xl 0;
+    padding: $spacing-2xl 0;
 
-background:#F2F3FF;
 
-}
+    h1 {
 
+      font-size: 32px;
 
+    }
 
 
-.team-grid{
+    p {
 
+      font-size: 16px;
 
-display:grid;
+    }
 
-grid-template-columns:repeat(4,1fr);
+  }
 
-gap:$spacing-xl;
 
 
-}
+  .contact-form,
+  .contact-info {
 
+    padding: $spacing-lg;
 
-
-.team-card{
-
-
-img{
-
-width:100%;
-
-aspect-ratio:3/4;
-
-object-fit:cover;
-
-border-radius:$radius-lg;
-
-margin-bottom:$spacing-md;
-
-}
-
-
-
-h3{
-
-font-size:20px;
-
-}
-
-
-p{
-
-color:$text-secondary;
-
-}
-
-
-}
-
-
-
-
-.about-cta{
-
-padding:$spacing-3xl 0;
-
-
-}
-
-
-
-.cta-box{
-
-
-background:$primary-dark;
-
-padding:$spacing-3xl;
-
-border-radius:$radius-lg;
-
-text-align:center;
-
-color:$white;
-
-
-h2{
-
-font-size:32px;
-
-margin-bottom:$spacing-md;
-
-}
-
-
-p{
-
-margin-bottom:$spacing-xl;
-
-opacity:.8;
-
-}
-
-
-}
-
-
-
-.cta-buttons{
-
-
-display:flex;
-
-justify-content:center;
-
-gap:$spacing-md;
-
-
-}
-
-@media(max-width:991px){
-
-
-.about-hero{
-
-
-h1{
-
-font-size:40px;
-
-}
-
-}
-
-
-
-.about-history__grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.values-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.team-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-
-}
-
-
-
-@media(max-width:600px){
-
-
-.team-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-.about-history__number{
-
-
-strong{
-
-font-size:42px;
-
-}
-
-}
-
-
-
-.cta-buttons{
-
-flex-direction:column;
-
-}
+  }
 
 
 }
